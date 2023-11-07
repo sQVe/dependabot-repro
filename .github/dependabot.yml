@@ -1,0 +1,35 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    allow:
+      - dependency-type: 'direct'
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 10
+    groups:
+      eslint:
+        patterns:
+          - '@rushstack/eslint-patch'
+          - '@typescript-eslint/eslint-plugin'
+          - '@typescript-eslint/parser'
+          - 'eslint'
+          - 'eslint-*'
+      react:
+        patterns:
+          - 'react'
+          - 'react-*'
+      test:
+        patterns:
+          - 'jest'
+          - 'jest-*'
+          - 'ts-jest'
+          - '@testing-library/*'
+      types:
+        patterns:
+          - '@types/*'
+    schedule:
+      interval: 'weekly'
+      time: '09:00'
+      timezone: 'Europe/Stockholm'
+    labels:
+      - 'dependencies'

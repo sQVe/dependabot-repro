@@ -1,0 +1,26 @@
+{
+  "name": "dependabot-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "config": "workspace:*",
+    "@types/jest": "^29.5.5",
+    "aws-cdk-lib": "^2.101.1",
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.3",
+    "sst": "^2.31.0",
+    "ts-jest": "^29.1.1",
+    "turbo": "^1.10.15",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "pnpm": ">=8.0.0",
+    "node": "^18.0.0"
+  },
+  "packageManager": "pnpm@8.6.10"
+}
